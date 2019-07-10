@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/simdjson-cocoa.svg?style=flat)](https://cocoapods.org/pods/simdjson-cocoa)
 [![Platform](https://img.shields.io/cocoapods/p/simdjson-cocoa.svg?style=flat)](https://cocoapods.org/pods/simdjson-cocoa)
 
+<img src="./art/benchmark_iphone8.jpg" width="350"/>
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.

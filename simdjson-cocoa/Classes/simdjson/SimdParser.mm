@@ -27,6 +27,14 @@ simdjson::ParsedJson::iterator *iterator;
   return iterator->is_array();
 }
 
+- (bool)moveToKey:(nonnull NSString *)akey {
+  return iterator->move_to_key([akey UTF8String]);
+}
+
+- (bool)moveToKey:(nonnull NSString *)akey length:(int)alength {
+  return iterator->move_to_key([akey UTF8String], alength);
+}
+
 - (int64_t)int:(nonnull NSString *)akey {
   iterator->move_to_key([akey UTF8String]);
   return iterator->get_integer();
@@ -42,7 +50,7 @@ simdjson::ParsedJson::iterator *iterator;
     return NULL;
   }
   iterator->print(std::cout); //prints {
-  bool moved = iterator->move_to_key([akey UTF8String], [akey length]); //key: name
+  bool moved = iterator->move_to_key([akey UTF8String], (int)[akey length]); //key: name
   std::cout << "moved:" << moved << std::endl;
   if (moved) {
     return [NSString stringWithUTF8String:iterator->get_string()];

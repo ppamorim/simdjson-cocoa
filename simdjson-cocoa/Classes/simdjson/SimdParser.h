@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 }
 - (bool)isObject;
 - (bool)isArray;
+- (bool)moveToKey:(nonnull NSString *)akey;
+- (bool)moveToKey:(nonnull NSString *)akey length:(int)alength;
 - (int64_t)int:(nonnull NSString *)akey;
 - (double)double:(nonnull NSString *)akey;
 - (NSString *)string:(nonnull NSString *)akey;
