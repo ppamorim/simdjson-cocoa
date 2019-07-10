@@ -13,7 +13,7 @@
 #import "datasource.h"
 #import "MessageParser.h"
 #import "simdjson.h"
-#import "SimdParser.hh"
+#import "SimdParser.h"
 
 FOUNDATION_EXPORT double simdjson_cocoaVersionNumber;
 FOUNDATION_EXPORT const unsigned char simdjson_cocoaVersionString[];

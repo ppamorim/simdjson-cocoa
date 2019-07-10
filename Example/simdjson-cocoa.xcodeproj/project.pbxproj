@@ -24,6 +24,7 @@
 		480C8F3C22D6079D00FC0A8E /* mesh.pretty.json in Resources */ = {isa = PBXBuildFile; fileRef = 480C8F2D22D6079D00FC0A8E /* mesh.pretty.json */; };
 		480C8F3D22D6079D00FC0A8E /* canada.json in Resources */ = {isa = PBXBuildFile; fileRef = 480C8F2E22D6079D00FC0A8E /* canada.json */; };
 		480C8F4B22D657B100FC0A8E /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 480C8F4A22D657AD00FC0A8E /* user.json */; };
+		480C8F4E22D664A400FC0A8E /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C8F4D22D664A400FC0A8E /* SwiftViewController.swift */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -70,6 +71,9 @@
 		480C8F2D22D6079D00FC0A8E /* mesh.pretty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mesh.pretty.json; sourceTree = "<group>"; };
 		480C8F2E22D6079D00FC0A8E /* canada.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = canada.json; sourceTree = "<group>"; };
 		480C8F4A22D657AD00FC0A8E /* user.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
+		480C8F4D22D664A400FC0A8E /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
+		480C8F4F22D665AC00FC0A8E /* simdjson_cocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = simdjson_cocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4895A18822D6692E003ED9D5 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		5DDDCBACA54DA2240D090B41 /* Pods_simdjson_cocoa_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_simdjson_cocoa_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* simdjson-cocoa_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "simdjson-cocoa_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -174,6 +178,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				480C8F4F22D665AC00FC0A8E /* simdjson_cocoa.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -196,6 +201,7 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				480C8F4D22D664A400FC0A8E /* SwiftViewController.swift */,
 			);
 			name = "Example for simdjson-cocoa";
 			path = "simdjson-cocoa";
@@ -204,6 +210,7 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4895A18822D6692E003ED9D5 /* Bridging-Header.h */,
 				6003F595195388D20070C39A /* simdjson-cocoa-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
@@ -303,6 +310,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = ppamorim;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = VZRAFDYUBF;
+						LastSwiftMigration = 1020;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -440,6 +451,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480C8F4E22D664A400FC0A8E /* SwiftViewController.swift in Sources */,
 				6003F59E195388D20070C39A /* simdjsonAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* simdjsonBenchmarkViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
@@ -549,6 +561,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -601,6 +614,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -612,14 +626,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				DEVELOPMENT_TEAM = "";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = VZRAFDYUBF;
 				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "simdjson-cocoa/simdjson-cocoa-Prefix.pch";
 				INFOPLIST_FILE = "simdjson-cocoa/simdjson-cocoa-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "simdjson-cocoa/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -631,14 +649,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				DEVELOPMENT_TEAM = "";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = VZRAFDYUBF;
 				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "simdjson-cocoa/simdjson-cocoa-Prefix.pch";
 				INFOPLIST_FILE = "simdjson-cocoa/simdjson-cocoa-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "simdjson-cocoa/Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -648,6 +669,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 91794EDC4089C1769478D252 /* Pods-simdjson-cocoa_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -675,6 +697,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 345FE03FA97E9524CAA5AB8D /* Pods-simdjson-cocoa_Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				FRAMEWORK_SEARCH_PATHS = (

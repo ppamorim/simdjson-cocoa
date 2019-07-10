@@ -14,6 +14,7 @@
 char * measure(size_t length, char* result, const char * filename);
 
 @interface simdjsonBenchmarkViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *dismissButton;
 
 @end
 
@@ -22,12 +23,12 @@ char * measure(size_t length, char* result, const char * filename);
 - (void)viewDidLoad {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-//  [self performSelector:@selector(benchmark) withObject:nil afterDelay:1.0];
+  [self performSelector:@selector(benchmark) withObject:nil afterDelay:1.0];
   
-  NSBundle *b = [NSBundle mainBundle];
-  NSURL *path = [[b bundleURL] URLByAppendingPathComponent: @"user.json"];
-  SimdParser *json = [SimdParser parseJson:path];  
-  os_log(OS_LOG_DEFAULT, "name: %s", [json string:@"name"]);
+//  NSBundle *b = [NSBundle mainBundle];
+//  NSURL *path = [[b bundleURL] URLByAppendingPathComponent: @"user.json"];
+//  SimdParser *json = [SimdParser parseJson:path];
+//  os_log(OS_LOG_DEFAULT, "name: %s", [json string:@"name"]);
   
 }
 
@@ -78,6 +79,13 @@ char * measure(size_t length, char* result, const char * filename);
   p = measure(length, p, cpath1);
   self.topText.text = [NSString stringWithUTF8String:result];
   self.topText.text = [NSString stringWithUTF8String:result];
+  
+  [_dismissButton setEnabled:true];
+  
+}
+
+- (IBAction)dismiss:(id)sender {
+  [self dismissViewControllerAnimated:true completion:NULL];
 }
 
 @end
