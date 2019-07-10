@@ -303,9 +303,6 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = ppamorim;
 				TargetAttributes = {
-					6003F589195388D20070C39A = {
-						DevelopmentTeam = VZRAFDYUBF;
-					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -615,7 +612,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				DEVELOPMENT_TEAM = VZRAFDYUBF;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "simdjson-cocoa/simdjson-cocoa-Prefix.pch";
@@ -634,7 +631,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
-				DEVELOPMENT_TEAM = VZRAFDYUBF;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "simdjson-cocoa/simdjson-cocoa-Prefix.pch";
