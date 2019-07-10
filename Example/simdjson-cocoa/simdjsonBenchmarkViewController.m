@@ -7,7 +7,6 @@
 //
 
 #import "simdjsonBenchmarkViewController.h"
-#import "MessageParser.h"
 #import "SimdParser.h"
 #import <os/log.h>
 

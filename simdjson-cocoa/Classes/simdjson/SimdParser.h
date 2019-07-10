@@ -43,7 +43,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (int64_t)int:(nonnull NSString *)akey;
 - (double)double:(nonnull NSString *)akey;
 - (NSString *)string:(nonnull NSString *)akey;
-+ (SimdParser*)parseJson:(nonnull NSURL *)url;
++ (SimdParser*)parseWithURL:(nonnull NSURL *)url;
++ (SimdParser*)parseWithData:(nonnull NSData *)adata;
++ (SimdParser*)parseWithInputStream:(nonnull NSInputStream *)ainputStream size:(size_t)asize;
++ (SimdParser*)parseWithBuffer:(nonnull uint8_t *)abuffer size:(size_t)asize;
 @end
 
 NS_ASSUME_NONNULL_END

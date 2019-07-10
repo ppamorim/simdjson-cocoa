@@ -14,10 +14,10 @@ class SwiftViewController: UIViewController {
   override func loadView() {
     super.loadView()
     let path: URL = Bundle.main.bundleURL.appendingPathComponent("user.json")
-    let json: SimdParser = SimdParser.parseJson(path)
-    if (json.isObject()) {
-      json.down() //Similar to void compute_dump(ParsedJson::iterator &pjh)
-    }
+    let json: SimdParser = SimdParser.parse(with: path)
+//    if (json.isObject()) {
+//      json.down() //Similar to void compute_dump(ParsedJson::iterator &pjh)
+//    }
   }
   
 }

@@ -150,7 +150,7 @@ simdjson::ParsedJson::iterator *iterator;
   return [NSString stringWithUTF8String:iterator->get_string()];;
 }
 
-+ (SimdParser*)parseJson:(nonnull NSURL *)url {
++ (SimdParser*)parseWithURL:(nonnull NSURL *)url {
   
   simdjson::padded_string p = simdjson::get_corpus([[url path] UTF8String]);
   simdjson::ParsedJson pj;
@@ -174,4 +174,37 @@ simdjson::ParsedJson::iterator *iterator;
   
   return [[SimdParser alloc] initWithIterator:pjh];
 }
+
++ (SimdParser*)parseWithData:(nonnull NSData *)adata {
+  uint8_t * buffer = (uint8_t  * )[adata bytes];
+  NSInteger length = [adata length] / sizeof(uint8_t);
+  simdjson::ParsedJson pj = simdjson::build_parsed_json(buffer, length, true);
+  simdjson::ParsedJson::iterator pjh(pj);
+  if (!pjh.isOk()) {
+    std::cerr << " Could not iterate parsed result. " << std::endl;
+    return NULL;
+  }
+  return [[SimdParser alloc] initWithIterator:pjh];
+}
+
+//This implementation is totally wrong, it should read the NSInputStream on demand.
++ (SimdParser*)parseWithInputStream:(nonnull NSInputStream *)ainputStream size:(size_t)asize {
+  [ainputStream open];
+  NSInteger result;
+  uint8_t buffer[asize];
+  while((result = [ainputStream read:buffer maxLength:asize]) != 0) { }
+  [ainputStream close];
+  return [SimdParser parseWithBuffer:buffer size:asize];
+}
+
++ (SimdParser*)parseWithBuffer:(nonnull uint8_t *)abuffer size:(size_t)asize {
+  simdjson::ParsedJson pj = simdjson::build_parsed_json(abuffer, asize, true);
+  simdjson::ParsedJson::iterator pjh(pj);
+  if (!pjh.isOk()) {
+    std::cerr << " Could not iterate parsed result. " << std::endl;
+    return NULL;
+  }
+  return [[SimdParser alloc] initWithIterator:pjh];
+}
+
 @end
