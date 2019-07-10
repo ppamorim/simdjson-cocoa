@@ -9,8 +9,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSObject (simdParser)
-
+@interface SimdParser : NSObject {
+}
+- (bool)isObject;
+- (bool)isArray;
+- (int64_t)int:(nonnull NSString *)akey;
+- (double)double:(nonnull NSString *)akey;
+- (NSString *)string:(nonnull NSString *)akey;
++ (SimdParser*)parseJson:(nonnull NSURL *)url;
 @end
 
 NS_ASSUME_NONNULL_END

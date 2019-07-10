@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02330EE80EA816655D1EC3B50985F90E /* MessageParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 820F54FE93744AF4E0ECCF9871A3F36B /* MessageParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		027BC7D578F30E3A053922EC3A3E3829 /* MessageParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3E3183812857B030CA0CE93D9920D5 /* MessageParser.m */; };
 		0ADDC027DEDADA26E6F67F9EDC80857D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		3355468D19A0082FB32575BB69BA0530 /* benchmark.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDE3BB95187B96B1377B8EBC30663048 /* benchmark.cpp */; };
+		1EC058BB3CE48304287A87EB6D7658F5 /* MessageParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0A55A50E268E3E5B460A7A5512A3A4 /* MessageParser.m */; };
+		2135DD83AF80C1F54796D50E891050E4 /* SimdParser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 75D1E26D76DC805BCFB4AD9DE2D2ECC6 /* SimdParser.mm */; };
+		2CC4B8B0A3999669E5BC604B88BA93DD /* SimdParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2964C828ACF4B52A5665611E5D847B08 /* SimdParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34D8D3344776CB00652711FB962E6F2C /* datasource.h in Headers */ = {isa = PBXBuildFile; fileRef = C5E4382614265F20DE8BEA36DE4CF9F7 /* datasource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		407A86BB3D16015908BA9801A1D86746 /* Pods-simdjson-cocoa_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF724694328F8494873651E467628D98 /* Pods-simdjson-cocoa_Example-dummy.m */; };
-		4AEE297C1E6F347BBB86490F677A62D0 /* simdjson.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6A5C4EE1A78D6B5639337050B747B90A /* simdjson.cpp */; };
-		5239E4C23A3B4431429FFE01501A4A54 /* simdjson.h in Headers */ = {isa = PBXBuildFile; fileRef = D04818606A64835322ADF96265C319AF /* simdjson.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		499727A2CB80C9A65F9CD9D297E7FB1E /* MessageParser.h in Headers */ = {isa = PBXBuildFile; fileRef = D22B6035AE6CF6D13E23D4A484E409FB /* MessageParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FF80D0FBF46B20B58A6F274346E4B74 /* Pods-simdjson-cocoa_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D003A5283E77ECF4706684D02FEBE334 /* Pods-simdjson-cocoa_Tests-dummy.m */; };
-		71BC4AF3979AE6BA9032F10528C53C00 /* simdjson-cocoa-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CC2FEB8168CAA93EA3E02D55D27A2C2 /* simdjson-cocoa-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65F48318CFB8121F6CC40BA94DFF7971 /* simdjson.h in Headers */ = {isa = PBXBuildFile; fileRef = 116D56EF9943A6FAC54B2A93813BC5EF /* simdjson.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		735FD5D0F79B52D3B44AD17E5A53B7E7 /* benchmark.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFD9A2EB59B6266443A546E0D4B0D9 /* benchmark.cpp */; };
+		95EFE1944D1E0C46B55354CC4D712C02 /* simdjson.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E68F778754F26865EC1C6A32DE26E9CC /* simdjson.cpp */; };
+		BDC3ADCEE57ADFC9D15161D2CCB5C48D /* simdjson-cocoa-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D16C866AE61B7B39E85A106090E19B95 /* simdjson-cocoa-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C2E38ABD33AD3E251C2DFFB1121A1E4E /* Pods-simdjson-cocoa_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 72208B0AC54627B9C9723636A6FF1B9B /* Pods-simdjson-cocoa_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC76E06D3685B0153CC6D96D8EA88B2B /* datasource.h in Headers */ = {isa = PBXBuildFile; fileRef = BD2E67A3EE07AEBD29CF50AE47AA34C8 /* datasource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2BDD043D3E49F2FC2A215DBE5026244 /* Pods-simdjson-cocoa_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 76001FBC3E1C2551E8FBA16ED0573C02 /* Pods-simdjson-cocoa_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D67E4BB16B7F0E952ED3BABAEEFC775B /* simdjson-cocoa-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DB30FE36C6BF312E651663A1A78626 /* simdjson-cocoa-dummy.m */; };
+		E543A5985C6AE171FD28FB925E6A7777 /* simdjson-cocoa-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D828B13D4FD1B49F12BD583A332F6C8B /* simdjson-cocoa-dummy.m */; };
 		EC7C196B0C30599A0A812AC599CF0F0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		EDC1FE2B61E38B30A7A30A6618E4900C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -43,42 +45,44 @@
 
 /* Begin PBXFileReference section */
 		0260236957E7019AA4BB0797280BFE6F /* Pods-simdjson-cocoa_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-simdjson-cocoa_Tests-Info.plist"; sourceTree = "<group>"; };
-		05EBECBA722A79FC60A4198FB6EDD1E6 /* simdjson-cocoa.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "simdjson-cocoa.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		17DE74768BD8E17537FF5FCB64B2AB64 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		10910ECD2CC08C35E4083D6BB9FB7163 /* simdjson-cocoa.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = "simdjson-cocoa.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		116D56EF9943A6FAC54B2A93813BC5EF /* simdjson.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = simdjson.h; path = "simdjson-cocoa/Classes/simdjson/simdjson.h"; sourceTree = "<group>"; };
 		1896BEB29C8B164C577D05C6DAEC9103 /* Pods-simdjson-cocoa_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-simdjson-cocoa_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		283F42F1EF1F6A552AB1F7061DF214B8 /* simdjson_cocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = simdjson_cocoa.framework; path = "simdjson-cocoa.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		283F42F1EF1F6A552AB1F7061DF214B8 /* simdjson_cocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = simdjson_cocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2964C828ACF4B52A5665611E5D847B08 /* SimdParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SimdParser.h; path = "simdjson-cocoa/Classes/simdjson/SimdParser.h"; sourceTree = "<group>"; };
+		2B0438278018A3050B41C10FA7C99289 /* simdjson-cocoa.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "simdjson-cocoa.modulemap"; sourceTree = "<group>"; };
+		2D12193F9F84E4BADCE91DEF4D773631 /* simdjson-cocoa-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "simdjson-cocoa-Info.plist"; sourceTree = "<group>"; };
+		2E2B0D64270590203C03F707B9A797A7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		37EE7308CD93C5CB6667BBCADF4204DE /* Pods-simdjson-cocoa_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-simdjson-cocoa_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		50892D1E88EB94C50FE49F7C46AB64A8 /* Pods-simdjson-cocoa_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-simdjson-cocoa_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		5E7DA830520C76801C17F9BA208D9596 /* simdjson-cocoa.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "simdjson-cocoa.modulemap"; sourceTree = "<group>"; };
+		5A0A55A50E268E3E5B460A7A5512A3A4 /* MessageParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MessageParser.m; path = "simdjson-cocoa/Classes/simdjson/MessageParser.m"; sourceTree = "<group>"; };
 		6484A04BB5694368415A4F856DABF798 /* Pods-simdjson-cocoa_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-simdjson-cocoa_Example.release.xcconfig"; sourceTree = "<group>"; };
-		6A5C4EE1A78D6B5639337050B747B90A /* simdjson.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = simdjson.cpp; path = "simdjson-cocoa/Classes/simdjson/simdjson.cpp"; sourceTree = "<group>"; };
-		6D370DF323F6487BB0943EA432E4ECC3 /* Pods_simdjson_cocoa_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_simdjson_cocoa_Example.framework; path = "Pods-simdjson-cocoa_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D370DF323F6487BB0943EA432E4ECC3 /* Pods_simdjson_cocoa_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_simdjson_cocoa_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F7F35AE273CC6F281F0CB04E7491D68 /* simdjson-cocoa-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "simdjson-cocoa-prefix.pch"; sourceTree = "<group>"; };
 		72208B0AC54627B9C9723636A6FF1B9B /* Pods-simdjson-cocoa_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-simdjson-cocoa_Example-umbrella.h"; sourceTree = "<group>"; };
+		74275A09C972B2820E2A47A386B97CBE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		75D1E26D76DC805BCFB4AD9DE2D2ECC6 /* SimdParser.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = SimdParser.mm; path = "simdjson-cocoa/Classes/simdjson/SimdParser.mm"; sourceTree = "<group>"; };
 		76001FBC3E1C2551E8FBA16ED0573C02 /* Pods-simdjson-cocoa_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-simdjson-cocoa_Tests-umbrella.h"; sourceTree = "<group>"; };
-		7CC2FEB8168CAA93EA3E02D55D27A2C2 /* simdjson-cocoa-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "simdjson-cocoa-umbrella.h"; sourceTree = "<group>"; };
-		820F54FE93744AF4E0ECCF9871A3F36B /* MessageParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MessageParser.h; path = "simdjson-cocoa/Classes/simdjson/MessageParser.h"; sourceTree = "<group>"; };
-		83DB30FE36C6BF312E651663A1A78626 /* simdjson-cocoa-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "simdjson-cocoa-dummy.m"; sourceTree = "<group>"; };
 		903FCF7B37637051046CA27CF2619BD5 /* Pods-simdjson-cocoa_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-simdjson-cocoa_Tests.modulemap"; sourceTree = "<group>"; };
 		909BC50D1125F7F1401C1CCF32DB87CB /* Pods-simdjson-cocoa_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-simdjson-cocoa_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9A00019404986ABF39D1D6C310BE9247 /* Pods-simdjson-cocoa_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-simdjson-cocoa_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		9A6E6ED1A548DD8643E620405FCAB456 /* Pods-simdjson-cocoa_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-simdjson-cocoa_Example-frameworks.sh"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B8D53ED8DDE8EECEE1088C074FE7AF62 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		BD2E67A3EE07AEBD29CF50AE47AA34C8 /* datasource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = datasource.h; path = "simdjson-cocoa/Classes/simdjson/datasource.h"; sourceTree = "<group>"; };
-		C1952093F04653842CF813FAF2DF6A3B /* simdjson-cocoa-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "simdjson-cocoa-Info.plist"; sourceTree = "<group>"; };
-		C94D290725DC70819E3A3E61D51FAC0D /* simdjson-cocoa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "simdjson-cocoa.xcconfig"; sourceTree = "<group>"; };
+		9ADFD9A2EB59B6266443A546E0D4B0D9 /* benchmark.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = benchmark.cpp; path = "simdjson-cocoa/Classes/simdjson/benchmark.cpp"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C5E4382614265F20DE8BEA36DE4CF9F7 /* datasource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = datasource.h; path = "simdjson-cocoa/Classes/simdjson/datasource.h"; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CDE3BB95187B96B1377B8EBC30663048 /* benchmark.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = benchmark.cpp; path = "simdjson-cocoa/Classes/simdjson/benchmark.cpp"; sourceTree = "<group>"; };
 		D003A5283E77ECF4706684D02FEBE334 /* Pods-simdjson-cocoa_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-simdjson-cocoa_Tests-dummy.m"; sourceTree = "<group>"; };
-		D04818606A64835322ADF96265C319AF /* simdjson.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = simdjson.h; path = "simdjson-cocoa/Classes/simdjson/simdjson.h"; sourceTree = "<group>"; };
-		D50D276DD39DFFC0667D0A34C54D9329 /* Pods_simdjson_cocoa_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_simdjson_cocoa_Tests.framework; path = "Pods-simdjson-cocoa_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D16C866AE61B7B39E85A106090E19B95 /* simdjson-cocoa-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "simdjson-cocoa-umbrella.h"; sourceTree = "<group>"; };
+		D22B6035AE6CF6D13E23D4A484E409FB /* MessageParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MessageParser.h; path = "simdjson-cocoa/Classes/simdjson/MessageParser.h"; sourceTree = "<group>"; };
+		D50D276DD39DFFC0667D0A34C54D9329 /* Pods_simdjson_cocoa_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_simdjson_cocoa_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D828B13D4FD1B49F12BD583A332F6C8B /* simdjson-cocoa-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "simdjson-cocoa-dummy.m"; sourceTree = "<group>"; };
 		D972072349F0B409379F7E156CF5FB2B /* Pods-simdjson-cocoa_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-simdjson-cocoa_Example-Info.plist"; sourceTree = "<group>"; };
 		DAEBAB074FF3427E9E21D20B622F8CEF /* Pods-simdjson-cocoa_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-simdjson-cocoa_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DDF71F8F9B7D15E1DEA9FCBD6F48FF9A /* Pods-simdjson-cocoa_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-simdjson-cocoa_Example.modulemap"; sourceTree = "<group>"; };
 		DF724694328F8494873651E467628D98 /* Pods-simdjson-cocoa_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-simdjson-cocoa_Example-dummy.m"; sourceTree = "<group>"; };
-		FB3E3183812857B030CA0CE93D9920D5 /* MessageParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MessageParser.m; path = "simdjson-cocoa/Classes/simdjson/MessageParser.m"; sourceTree = "<group>"; };
+		E68F778754F26865EC1C6A32DE26E9CC /* simdjson.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = simdjson.cpp; path = "simdjson-cocoa/Classes/simdjson/simdjson.cpp"; sourceTree = "<group>"; };
+		EE8EA23D3F9655D2AA882C1AF32F8EB0 /* simdjson-cocoa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "simdjson-cocoa.xcconfig"; sourceTree = "<group>"; };
 		FBF09228F9DBBFC2FD0E7AA0844A308C /* Pods-simdjson-cocoa_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-simdjson-cocoa_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		FFEF4B91F4A76CD45E4280AACBD2FBC4 /* simdjson-cocoa-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "simdjson-cocoa-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,17 +113,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		17F105E6AA3ADAD4504800D565039C6F /* simdjson-cocoa */ = {
+		0AF0BA168D631294B9B41192E419AFFE /* simdjson-cocoa */ = {
 			isa = PBXGroup;
 			children = (
-				CDE3BB95187B96B1377B8EBC30663048 /* benchmark.cpp */,
-				BD2E67A3EE07AEBD29CF50AE47AA34C8 /* datasource.h */,
-				820F54FE93744AF4E0ECCF9871A3F36B /* MessageParser.h */,
-				FB3E3183812857B030CA0CE93D9920D5 /* MessageParser.m */,
-				6A5C4EE1A78D6B5639337050B747B90A /* simdjson.cpp */,
-				D04818606A64835322ADF96265C319AF /* simdjson.h */,
-				FE234AB801A6F5FA21381FB8509A8A5D /* Pod */,
-				2D7BE3FC5AB89F4AF46608F4F82E89B5 /* Support Files */,
+				9ADFD9A2EB59B6266443A546E0D4B0D9 /* benchmark.cpp */,
+				C5E4382614265F20DE8BEA36DE4CF9F7 /* datasource.h */,
+				D22B6035AE6CF6D13E23D4A484E409FB /* MessageParser.h */,
+				5A0A55A50E268E3E5B460A7A5512A3A4 /* MessageParser.m */,
+				E68F778754F26865EC1C6A32DE26E9CC /* simdjson.cpp */,
+				116D56EF9943A6FAC54B2A93813BC5EF /* simdjson.h */,
+				2964C828ACF4B52A5665611E5D847B08 /* SimdParser.h */,
+				75D1E26D76DC805BCFB4AD9DE2D2ECC6 /* SimdParser.mm */,
+				D09BD92316408F418348BE8594A038AB /* Pod */,
+				26383A568B038AC070FB1B8B0134CE11 /* Support Files */,
 			);
 			name = "simdjson-cocoa";
 			path = ../..;
@@ -134,26 +140,18 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		2D7BE3FC5AB89F4AF46608F4F82E89B5 /* Support Files */ = {
+		26383A568B038AC070FB1B8B0134CE11 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5E7DA830520C76801C17F9BA208D9596 /* simdjson-cocoa.modulemap */,
-				C94D290725DC70819E3A3E61D51FAC0D /* simdjson-cocoa.xcconfig */,
-				83DB30FE36C6BF312E651663A1A78626 /* simdjson-cocoa-dummy.m */,
-				C1952093F04653842CF813FAF2DF6A3B /* simdjson-cocoa-Info.plist */,
-				FFEF4B91F4A76CD45E4280AACBD2FBC4 /* simdjson-cocoa-prefix.pch */,
-				7CC2FEB8168CAA93EA3E02D55D27A2C2 /* simdjson-cocoa-umbrella.h */,
+				2B0438278018A3050B41C10FA7C99289 /* simdjson-cocoa.modulemap */,
+				EE8EA23D3F9655D2AA882C1AF32F8EB0 /* simdjson-cocoa.xcconfig */,
+				D828B13D4FD1B49F12BD583A332F6C8B /* simdjson-cocoa-dummy.m */,
+				2D12193F9F84E4BADCE91DEF4D773631 /* simdjson-cocoa-Info.plist */,
+				6F7F35AE273CC6F281F0CB04E7491D68 /* simdjson-cocoa-prefix.pch */,
+				D16C866AE61B7B39E85A106090E19B95 /* simdjson-cocoa-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/simdjson-cocoa";
-			sourceTree = "<group>";
-		};
-		2FDA4C6380563F0BA8B4AFA387056349 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				17F105E6AA3ADAD4504800D565039C6F /* simdjson-cocoa */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		41B45CEB5CB2277C88F361C3A9AFE9ED /* Pods-simdjson-cocoa_Tests */ = {
@@ -189,6 +187,14 @@
 			path = "Target Support Files/Pods-simdjson-cocoa_Example";
 			sourceTree = "<group>";
 		};
+		82FDA0AABAB115D2B51C7389A67D8DB8 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0AF0BA168D631294B9B41192E419AFFE /* simdjson-cocoa */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,11 +217,21 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				2FDA4C6380563F0BA8B4AFA387056349 /* Development Pods */,
+				82FDA0AABAB115D2B51C7389A67D8DB8 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				C934E17ECA21BB34B671120EF8FE4C3B /* Products */,
 				1DA1C41D5D63384F2C808FDC01DDBE61 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D09BD92316408F418348BE8594A038AB /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				74275A09C972B2820E2A47A386B97CBE /* LICENSE */,
+				2E2B0D64270590203C03F707B9A797A7 /* README.md */,
+				10910ECD2CC08C35E4083D6BB9FB7163 /* simdjson-cocoa.podspec */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -226,19 +242,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FE234AB801A6F5FA21381FB8509A8A5D /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				17DE74768BD8E17537FF5FCB64B2AB64 /* LICENSE */,
-				B8D53ED8DDE8EECEE1088C074FE7AF62 /* README.md */,
-				05EBECBA722A79FC60A4198FB6EDD1E6 /* simdjson-cocoa.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		7841B91FEE098B9194B0F847CADEA27A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34D8D3344776CB00652711FB962E6F2C /* datasource.h in Headers */,
+				499727A2CB80C9A65F9CD9D297E7FB1E /* MessageParser.h in Headers */,
+				BDC3ADCEE57ADFC9D15161D2CCB5C48D /* simdjson-cocoa-umbrella.h in Headers */,
+				65F48318CFB8121F6CC40BA94DFF7971 /* simdjson.h in Headers */,
+				2CC4B8B0A3999669E5BC604B88BA93DD /* SimdParser.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B43824D3D6721EC6E46FCB1599C3251F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -252,17 +270,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2BDD043D3E49F2FC2A215DBE5026244 /* Pods-simdjson-cocoa_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D9E5300475FAE19C6D93506C103C0C89 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC76E06D3685B0153CC6D96D8EA88B2B /* datasource.h in Headers */,
-				02330EE80EA816655D1EC3B50985F90E /* MessageParser.h in Headers */,
-				71BC4AF3979AE6BA9032F10528C53C00 /* simdjson-cocoa-umbrella.h in Headers */,
-				5239E4C23A3B4431429FFE01501A4A54 /* simdjson.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,8 +299,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6208DEA4440E85EA91A8B71C626BA43 /* Build configuration list for PBXNativeTarget "simdjson-cocoa" */;
 			buildPhases = (
-				D9E5300475FAE19C6D93506C103C0C89 /* Headers */,
-				B2B83F16E30D335169B964A9EA9E1EBD /* Sources */,
+				7841B91FEE098B9194B0F847CADEA27A /* Headers */,
+				21BE5D1F46AC94BEFA4C37BF9F8CFF05 /* Sources */,
 				4F027C5254332F0128F6F09E268158C5 /* Frameworks */,
 				C5B418428B5C610C08A91C0534B88656 /* Resources */,
 			);
@@ -339,6 +346,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
@@ -378,22 +386,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		21BE5D1F46AC94BEFA4C37BF9F8CFF05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				735FD5D0F79B52D3B44AD17E5A53B7E7 /* benchmark.cpp in Sources */,
+				1EC058BB3CE48304287A87EB6D7658F5 /* MessageParser.m in Sources */,
+				E543A5985C6AE171FD28FB925E6A7777 /* simdjson-cocoa-dummy.m in Sources */,
+				95EFE1944D1E0C46B55354CC4D712C02 /* simdjson.cpp in Sources */,
+				2135DD83AF80C1F54796D50E891050E4 /* SimdParser.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		64559F192347077A9E9235A4A6A3A857 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5FF80D0FBF46B20B58A6F274346E4B74 /* Pods-simdjson-cocoa_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B2B83F16E30D335169B964A9EA9E1EBD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3355468D19A0082FB32575BB69BA0530 /* benchmark.cpp in Sources */,
-				027BC7D578F30E3A053922EC3A3E3829 /* MessageParser.m in Sources */,
-				D67E4BB16B7F0E952ED3BABAEEFC775B /* simdjson-cocoa-dummy.m in Sources */,
-				4AEE297C1E6F347BBB86490F677A62D0 /* simdjson.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,8 +485,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -617,7 +625,7 @@
 		};
 		5E103A540A3B396EBBE38BBBB1713DBE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C94D290725DC70819E3A3E61D51FAC0D /* simdjson-cocoa.xcconfig */;
+			baseConfigurationReference = EE8EA23D3F9655D2AA882C1AF32F8EB0 /* simdjson-cocoa.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -714,7 +722,7 @@
 		};
 		EA09F29AF6E0CC3AB61173AC3CCA2858 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C94D290725DC70819E3A3E61D51FAC0D /* simdjson-cocoa.xcconfig */;
+			baseConfigurationReference = EE8EA23D3F9655D2AA882C1AF32F8EB0 /* simdjson-cocoa.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

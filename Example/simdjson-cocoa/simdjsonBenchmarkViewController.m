@@ -8,6 +8,8 @@
 
 #import "simdjsonBenchmarkViewController.h"
 #import "MessageParser.h"
+#import "SimdParser.h"
+#import <os/log.h>
 
 char * measure(size_t length, char* result, const char * filename);
 
@@ -20,7 +22,13 @@ char * measure(size_t length, char* result, const char * filename);
 - (void)viewDidLoad {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-  [self performSelector:@selector(benchmark) withObject:nil afterDelay:1.0];
+//  [self performSelector:@selector(benchmark) withObject:nil afterDelay:1.0];
+  
+  NSBundle *b = [NSBundle mainBundle];
+  NSURL *path = [[b bundleURL] URLByAppendingPathComponent: @"user.json"];
+  SimdParser *json = [SimdParser parseJson:path];  
+  os_log(OS_LOG_DEFAULT, "name: %s", [json string:@"name"]);
+  
 }
 
 - (void)didReceiveMemoryWarning

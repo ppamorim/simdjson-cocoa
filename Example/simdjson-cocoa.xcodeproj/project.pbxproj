@@ -23,6 +23,7 @@
 		480C8F3B22D6079D00FC0A8E /* small in Resources */ = {isa = PBXBuildFile; fileRef = 480C8F2C22D6079D00FC0A8E /* small */; };
 		480C8F3C22D6079D00FC0A8E /* mesh.pretty.json in Resources */ = {isa = PBXBuildFile; fileRef = 480C8F2D22D6079D00FC0A8E /* mesh.pretty.json */; };
 		480C8F3D22D6079D00FC0A8E /* canada.json in Resources */ = {isa = PBXBuildFile; fileRef = 480C8F2E22D6079D00FC0A8E /* canada.json */; };
+		480C8F4B22D657B100FC0A8E /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 480C8F4A22D657AD00FC0A8E /* user.json */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -68,6 +69,7 @@
 		480C8F2C22D6079D00FC0A8E /* small */ = {isa = PBXFileReference; lastKnownFileType = folder; path = small; sourceTree = "<group>"; };
 		480C8F2D22D6079D00FC0A8E /* mesh.pretty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mesh.pretty.json; sourceTree = "<group>"; };
 		480C8F2E22D6079D00FC0A8E /* canada.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = canada.json; sourceTree = "<group>"; };
+		480C8F4A22D657AD00FC0A8E /* user.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
 		5DDDCBACA54DA2240D090B41 /* Pods_simdjson_cocoa_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_simdjson_cocoa_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* simdjson-cocoa_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "simdjson-cocoa_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -128,6 +130,7 @@
 		480C8F1F22D6077B00FC0A8E /* jsonexamples */ = {
 			isa = PBXGroup;
 			children = (
+				480C8F4A22D657AD00FC0A8E /* user.json */,
 				480C8F2122D6079D00FC0A8E /* apache_builds.json */,
 				480C8F2E22D6079D00FC0A8E /* canada.json */,
 				480C8F2622D6079D00FC0A8E /* citm_catalog.json */,
@@ -337,6 +340,7 @@
 				480C8F3122D6079D00FC0A8E /* instruments.json in Resources */,
 				480C8F2F22D6079D00FC0A8E /* twitterescaped.json in Resources */,
 				480C8F3922D6079D00FC0A8E /* random.json in Resources */,
+				480C8F4B22D657B100FC0A8E /* user.json in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				480C8F3A22D6079D00FC0A8E /* marine_ik.json in Resources */,
 				480C8F3622D6079D00FC0A8E /* numbers.json in Resources */,
