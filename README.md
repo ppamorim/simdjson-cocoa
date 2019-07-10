@@ -22,6 +22,12 @@ it, simply add the following line to your Podfile:
 pod 'simdjson-cocoa'
 ```
 
+## Based on
+
+Thank you Lemire for sharing your project, with it I was able to build this wrapper.
+
+https://github.com/lemire/iossimdjson
+
 ## Author
 
 ppamorim, pp.amorim@hotmail.com
