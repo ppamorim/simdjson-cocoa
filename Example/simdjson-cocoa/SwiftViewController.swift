@@ -15,8 +15,9 @@ class SwiftViewController: UIViewController {
     super.loadView()
     let path: URL = Bundle.main.bundleURL.appendingPathComponent("user.json")
     let json: SimdParser = SimdParser.parseJson(path)
-    print("json.isObject() \(json.isObject())")
-    json.move(toKey: "id")
+    if (json.isObject()) {
+      json.down() //Similar to void compute_dump(ParsedJson::iterator &pjh)
+    }
   }
   
 }
