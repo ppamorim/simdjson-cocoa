@@ -1,0 +1,6 @@
+framework module Pods_simdjson_cocoa_Example {
+  umbrella header "Pods-simdjson-cocoa_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

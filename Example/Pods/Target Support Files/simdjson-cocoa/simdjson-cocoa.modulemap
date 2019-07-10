@@ -1,0 +1,6 @@
+framework module simdjson_cocoa {
+  umbrella header "simdjson-cocoa-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "simdjson-cocoa",
+  "version": "0.1.0",
+  "summary": "A short description of simdjson-cocoa.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ppamorim/simdjson-cocoa",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ppamorim": "pp.amorim@hotmail.com"
+  },
+  "source": {
+    "git": "https://github.com/ppamorim/simdjson-cocoa.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "simdjson-cocoa/Classes/**/*"
+}

@@ -1,0 +1,16 @@
+PODS:
+  - simdjson-cocoa (0.1.0)
+
+DEPENDENCIES:
+  - simdjson-cocoa (from `../`)
+
+EXTERNAL SOURCES:
+  simdjson-cocoa:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  simdjson-cocoa: e8441f325042a0b31f30260bc5667fca3e022334
+
+PODFILE CHECKSUM: 4cf725b1d5a6e75d2c92c244f2b49e968763d23e
+
+COCOAPODS: 1.6.1
