@@ -19,6 +19,54 @@ simdjson::ParsedJson::iterator *iterator;
   return self;
 }
 
+- (bool)isOk {
+  return iterator->isOk();
+}
+
+- (size_t)tapeLocation {
+  return iterator->get_tape_location();
+}
+
+- (size_t)tapeLength {
+  return iterator->get_tape_length();
+}
+
+- (size_t)depth {
+  return iterator->get_depth();
+}
+
+- (uint8_t)scopeType {
+  return iterator->get_scope_type();
+}
+
+- (bool)moveFoward {
+  return iterator->move_forward();
+}
+
+- (uint8_t)type {
+  return iterator->get_type();
+}
+
+- (int64_t)integer {
+  return iterator->get_type();
+}
+
+- (NSString *)string {
+  return [NSString stringWithUTF8String:iterator->get_string()];
+}
+
+- (uint32_t)stringLength {
+  return iterator->get_string_length();
+}
+
+- (double)double {
+  return iterator->get_double();
+}
+
+- (bool)isObjectOrArray {
+  return iterator->is_object_or_array();
+}
+
 - (bool)isObject {
   return iterator->is_object();
 }
@@ -27,12 +75,64 @@ simdjson::ParsedJson::iterator *iterator;
   return iterator->is_array();
 }
 
+- (bool)isString {
+  return iterator->is_string();
+}
+
+- (bool)isInteger {
+  return iterator->is_integer();
+}
+
+- (bool)isDouble {
+  return iterator->is_double();
+}
+
+- (bool)isTrue {
+  return iterator->is_true();
+}
+
+- (bool)isFalse {
+  return iterator->is_false();
+}
+
+- (bool)isNULL {
+  return iterator->is_null();
+}
+
+- (bool)isObjectOrArray:(uint8_t)atype {
+  return iterator->is_object_or_array(atype);
+}
+
 - (bool)moveToKey:(nonnull NSString *)akey {
   return iterator->move_to_key([akey UTF8String]);
 }
 
 - (bool)moveToKey:(nonnull NSString *)akey length:(int)alength {
   return iterator->move_to_key([akey UTF8String], alength);
+}
+
+- (void)moveToValue {
+  return iterator->move_to_value();
+}
+
+- (bool)next {
+  return iterator->next();
+}
+
+- (bool)previous {
+  return iterator->prev();
+}
+
+- (bool)up {
+  return iterator->up();
+}
+
+- (bool)down {
+  return iterator->down();
+}
+
+- (void)toStartScope {
+  return iterator->to_start_scope();
 }
 
 - (int64_t)int:(nonnull NSString *)akey {
@@ -46,16 +146,8 @@ simdjson::ParsedJson::iterator *iterator;
 }
 
 - (NSString *)string:(nonnull NSString *)akey {
-  if (iterator == NULL || !iterator->isOk()) {
-    return NULL;
-  }
-  iterator->print(std::cout); //prints {
-  bool moved = iterator->move_to_key([akey UTF8String], (int)[akey length]); //key: name
-  std::cout << "moved:" << moved << std::endl;
-  if (moved) {
-    return [NSString stringWithUTF8String:iterator->get_string()];
-  }
-  return NULL;
+  iterator->move_to_key([akey UTF8String]);
+  return [NSString stringWithUTF8String:iterator->get_string()];;
 }
 
 + (SimdParser*)parseJson:(nonnull NSURL *)url {
