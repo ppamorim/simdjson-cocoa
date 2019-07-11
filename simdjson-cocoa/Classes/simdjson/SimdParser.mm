@@ -190,7 +190,7 @@ simdjson::ParsedJson::iterator *iterator;
 + (SimdParser*)parseWithInputStream:(nonnull NSInputStream *)ainputStream size:(size_t)asize {
   [ainputStream open];
   NSInteger result;
-  uint8_t buffer[asize];
+  uint8_t buffer[1024];
   
   simdjson::ParsedJson pj;
   
@@ -199,7 +199,7 @@ simdjson::ParsedJson::iterator *iterator;
     return NULL;
   }
   
-  while((result = [ainputStream read:buffer maxLength:asize]) != 0) {
+  while((result = [ainputStream read:buffer maxLength:1024]) != 0) {
     simdjson::json_parse(buffer, asize, pj);
   }
   [ainputStream close];
